@@ -27,9 +27,9 @@ export default function Home() {
     setResults([...results, { name, time: timeString }]);
 
     // ODOSLANIE DO GOOGLE SHEETS
-    fetch('https://script.google.com/macros/s/AKfycbxNEeYW2hWPWKmZbajKcJvZJQwDvpFBVe9gWMKImdfA75xEwED8GYcJTB1tE_oh2r01/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbs9SzgXrHz7uWNZo15ziuuJh73tclvTMOlPO-PYE9kdpVkfYntfJwSjaGlBBfrZKv53/exec', {
       method: 'POST',
-      mode: 'no-cors', // dôležité na zabránenie CORS chyby
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json',
       },
